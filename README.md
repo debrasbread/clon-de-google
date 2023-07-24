@@ -6,4 +6,7 @@ El objetivo de este proyecto era recrear la interfaz gráfica de la página de b
 
 Esta práctica forma parte de las actividades realizadas durante el bootcamp de Tecnolochicas PRO Summer, enfocado en desarrollo web front-end.
 
-[Aquí](URL) puedes ver la página desplegada.
+[Aquí](https://cheerful-lolly-07ccb4.netlify.app/) puedes ver la página desplegada.
+
+![Google clone](google-clone.png)
+
