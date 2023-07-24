@@ -1,0 +1,196 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: arial, sans-serif;
+}
+
+body {
+    font-size: 1.3rem;
+}
+
+li {
+    list-style-type: none;
+    display: inline-block;
+}
+
+a {
+    text-decoration: underline;
+}
+
+.header__container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header__menu {
+    margin-right: 2rem;
+    margin-top: 1rem;
+}
+
+.header__list {
+    display: flex;
+    align-items: center;
+}
+
+.header__link {
+    color: #202124;
+    padding: 1rem;
+    text-decoration: none;
+}
+
+.header__image-google-apps {
+    max-width: 2rem;
+}
+
+.header__image-profile {
+    max-width: 3.2rem;
+    clip-path: circle();
+}
+
+/* MAIN*/
+.main__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Center the content horizontally */
+}
+
+.main__logo-container {
+    margin: 2rem auto;
+    /* Adjust the margin to position the logo above the search box */
+}
+
+.main__logo {
+    width: 200px;
+    /* Adjust the width of the logo as needed */
+}
+
+.main__search-box {
+    margin: 2rem auto;
+    /* Adjust the margin to create space between the logo and search box */
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Center the search box content horizontally */
+    border: 0.05rem solid rgb(209, 209, 209);
+    border-radius: 5rem;
+    max-width: 50rem;
+}
+
+.main__search-box:hover {
+    box-shadow: 0.07rem 0.07rem 0.25rem 0.1rem rgb(209, 209, 209);
+}
+
+#main__search-icons {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    color: gray;
+}
+
+.main__input-search-box {
+    width: 80%;
+    height: 4rem;
+    border-style: solid;
+    border-color: white;
+}
+
+.main__input-search-box:focus {
+    outline-style: none;
+}
+
+.main__buttoms-container {
+    padding: 0.4rem;
+    display: flex;
+    justify-content: center;
+}
+
+.main__search-buttom {
+    padding: 0.6rem 1.5rem;
+    margin: 0 1.5rem;
+    border: none;
+    border-radius: 0.4rem;
+    background-color: #f8f9fa;
+}
+
+.main__search-buttom:hover {
+    border: 0.01rem;
+    border-bottom: 0.3rem;
+    border-color: rgb(211, 211, 211);
+    border-style: solid;
+}
+
+.main__change-language-option {
+    margin: 3rem auto;
+    display: flex;
+}
+
+.main__link-translate {
+    color: #1967d2;
+}
+
+.main__link-translate:visited {
+    color: #1967d2;
+}
+
+/* FOOTER */
+.footer__container {
+    background-color: #f2f2f2;
+    border: #dadce0;
+    position: fixed;
+    bottom: 0rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-decoration: none;
+}
+
+.footer__list {
+    padding: 2rem;
+    text-decoration: none;
+}
+
+.footer__link {
+    color: #70757a;
+    margin: 0 1rem;
+    text-decoration: none;
+}
+
+/* RESPONSIVE */
+@media only screen and (max-width: 650px) {
+    .footer__container {
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width:389px) {
+    .footer__link-hidden {
+        display: none;
+    }
+
+    .main__logo-container {
+        margin: 5rem auto 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .main__logo {
+        width: 60%;
+    }
+
+    .main__buttoms-container {
+        display: none;
+    }
+
+    .main__change-language-option {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
